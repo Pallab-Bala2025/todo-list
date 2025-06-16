@@ -1,0 +1,71 @@
+.todo-list {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    alignment-baseline: middle;
+}
+h1 {
+    font-size: 2rem;
+    color: #194ee1;
+    text-align: center;
+    margin-top: 1px;
+}
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-left: 20px;
+}
+input[type="text"]:hover {
+      border-color: #00bcd4;
+      background: #e0f7fa;
+      box-shadow: 0 0 12px rgba(0, 188, 212, 0.6);
+    }
+
+    input[type="text"]:hover::placeholder {
+      color: #00bcd4;
+    }
+
+.add-task {
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 10px 0;
+    margin-left: 200px;
+
+    /* Add animation */
+    animation: changeColor 5s infinite;
+    transition: background-color 1s ease-in-out;
+}
+
+/* Define keyframes for color change */
+@keyframes changeColor {
+    0%   { background-color: #4caf50; } /* Green */
+    20%  { background-color: #2196f3; } /* Blue */
+    40%  { background-color: #ff9800; } /* Orange */
+    60%  { background-color: #e91e63; } /* Pink */
+    80%  { background-color: #9c27b0; } /* Purple */
+    100% { background-color: #4caf50; } /* Back to Green */
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
